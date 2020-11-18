@@ -17,6 +17,7 @@ class App extends React.Component{
       }},3000,y)
     }
     reset(e){
+      if($("#f1").style.height=== "55vh" || $("#f2").style.height=== "55vh" || $("#f3").style.height=== "55vh" || $("#f4").style.height=== "55vh"){return}
       e.target.style.transitionDuration= "1s"
       e.target.style.height="1vh"
     }
@@ -30,10 +31,10 @@ class App extends React.Component{
           <img className="tower" src="./media/tower.png" alt=""></img> 
         </div>
         <div className="fires">
-          <img className="fire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
-          <img className="fire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
-          <img className="fire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
-          <img className="lastfire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
+          <img id="f1" className="fire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
+          <img id="f2" className="fire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
+          <img id="f3" className="fire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
+          <img id="f4" className="lastfire" src="./media/fire.png" onClick={this.reset.bind(this)} alt=""></img> 
         </div>
       </div>
       )
@@ -41,4 +42,3 @@ class App extends React.Component{
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
