@@ -1,0 +1,53 @@
+html{
+  min-height: 90vh;
+}
+body{
+    background-image: url('media/grass.jpg');
+    background-color: greenyellow;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    min-height: 90vh;
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.center{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.tower{
+  width:24vw;
+  height: 80vh;
+  margin-top: 10vh;
+}
+.fire{
+  width: 12vw;
+  height: 1vh;
+  margin-right: 12vw;
+}
+.lastfire{
+  width: 12vw;
+  height: 1vh;
+}
+.fires{
+  position: fixed;
+  z-index: 10;
+  top: 25vh;
+  left: 7.5vw;
+  height: 55vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
