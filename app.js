@@ -17,7 +17,6 @@ class App extends React.Component{
       }},3000,y)
     }
     reset(e){
-      if($("#f1").style.height=== "55vh" || $("#f2").style.height=== "55vh" || $("#f3").style.height=== "55vh" || $("#f4").style.height=== "55vh"){return}
       e.target.style.transitionDuration= "1s"
       e.target.style.height="1vh"
     }
